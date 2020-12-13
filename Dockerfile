@@ -6,4 +6,6 @@ COPY . .
 
 RUN npm install
 
-CMD ["npm","start"]
+EXPOSE 4100
+
+ENTRYPOINT [ "npm", "start" ]
